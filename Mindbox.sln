@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox", "Mindbox\Mindbox.csproj", "{722C55DF-F898-4AA0-85B8-624E69C1D487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{722C55DF-F898-4AA0-85B8-624E69C1D487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722C55DF-F898-4AA0-85B8-624E69C1D487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722C55DF-F898-4AA0-85B8-624E69C1D487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722C55DF-F898-4AA0-85B8-624E69C1D487}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B046F52-7554-4957-B2CD-B71BE8BF0FD5}
+	EndGlobalSection
+EndGlobal
