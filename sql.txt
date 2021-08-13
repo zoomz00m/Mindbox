@@ -1,0 +1,38 @@
+create table dbo.Product
+(
+	ID int primary key,
+	Name nvarchar(128) not null,
+	ExpDate datetime not null
+)
+
+insert into dbo.Product values (1, 'Cucumber', '20210815')
+insert into dbo.Product values (2, 'Tomato', '20210817')
+insert into dbo.Product values (3, 'Dill', '20210814')
+
+create table dbo.Category
+(
+	ID int primary key,
+	Name nvarchar(128) not null
+)
+
+insert into dbo.Category values (1, 'Veges')
+insert into dbo.Category values (2, 'Greens')
+
+create table dbo.ProductCategory
+(
+	ProductID int foreign key references dbo.Product(ID),
+	CategoryID int foreign key references dbo.Category(ID),
+	primary key(ProductID, CategoryID)
+)
+
+insert into dbo.ProductCategory values (1, 1)
+insert into dbo.ProductCategory values (1, 2)
+insert into dbo.ProductCategory values (2, 1)
+insert into dbo.ProductCategory values (3, 1)
+
+select Product.Name, Category.Name
+	from Product
+left outer join ProductCategory
+	on Product.ID = ProductCategory.ProductID
+left outer join Category
+	on ProductCategory.CategoryID = Category.ID
