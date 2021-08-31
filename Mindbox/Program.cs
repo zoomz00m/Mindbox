@@ -11,7 +11,7 @@ namespace Mindbox
             Triangle tr = new Triangle(3, 4, 5);
 
             Console.WriteLine(crc.GetArea());
-            Console.WriteLine(tr.GetArea());
+            //Console.WriteLine(tr.GetArea());
 
             Console.ReadKey();
         }
