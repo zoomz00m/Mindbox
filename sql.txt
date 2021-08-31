@@ -36,3 +36,5 @@ left outer join ProductCategory
 	on Product.ID = ProductCategory.ProductID
 left outer join Category
 	on ProductCategory.CategoryID = Category.ID
+
+some more code
